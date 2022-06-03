@@ -4,21 +4,129 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title style="color: rgb(17, 20, 20);">Aula html</title>
+        <link rel="icon" type="image/icon" href="/img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="folhaEstilos/estilo.css">
+
+       <script type="text/javascript" src="javascript/jse.js"></script>
+
     </head>
     <body>
+
         <!--Modo de comentar código html-->
+
+        <h1>My First JavaScript</h1>
+
+        <p>JavaScript can change the content of an HTML element:</p>
+
+        <button type="button" onclick="myFunction()">Click Me!</button>
+
+        <p id="demo">This is a demonstration.</p>
+
+        <h1>Teste</h1>
+        <section>
+            <nav>
+              <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+              </ul>
+            </nav>
+            
+            <article>
+              <h1>London</h1>
+              <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+              <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            </article>
+          </section>
+
+        <picture>
+            <source media="(min-width: 1278px)" srcset="img/background.jpg">
+            <source media="(min-width: 225px)" srcset="img/download.png">
+            <!--<img src="img/mesa.jpeg"> -->
+        </picture>
+        <code>
+            x = 5;
+            y = 5;
+            z = x + y;
+        </code>
+        <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        </pre>
+        
+        <table> 
+            <caption>Teste</caption>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                    <th>Country</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>Germany</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Mexico</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Mexico</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Mexico</td>
+                    <td>Mexico</td>
+                </tr>
+        </table>
+        
+
+        <button onclick="document.location='default.asp'">HTML tutorial</button>
+        <hr>
+        <img src="img/mesa.jpeg" alt="mesa de trabalho" width="259px" height="195px" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="82,86,179,151" alt="notebook" 
+            href="https://www.amazon.com.br/Notebook-Multilaser-Pentium-Quadcore-Windows/dp/B08GKTVNH3/ref=asc_df_B08GKTVNH3/?tag=googleshopp00-20&linkCode=df0&hvadid=379720653016&hvpos=&hvnetw=g&hvrand=11176680352643271073&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031554&hvtargid=pla-1056599402359&psc=1"
+            target="_blank" onclick="minhaFunção()">
+            <area shape="rect" coords="121,52,237,84" alt="Luminária " href="https://www.amazon.com.br/Lumin%C3%A1ria-Articulada-Abajur-Pixar-Vermelho/dp/B07HKX2CX2/ref=asc_df_B07HKX2CX2/?tag=googleshopp00-20&linkCode=df0&hvadid=379708191729&hvpos=&hvnetw=g&hvrand=12027663550368121122&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031554&hvtargid=pla-811769377582&th=1"
+            target="_blank">
+        </map>
+
+        <br>
+            <a href="mailto:pygamer80@gmail.com">Mandar e-mail</a>
         
             <h1 title="Teste"  >Título da página</h1>
             <h2 >Teste</h2>
             <h2 style="font-family: 'Courier New', Courier, monospace;">Teste2</h2>
             <h1 style="font-size:60px;">Teste</h1>
-            <a href="http://www.w3schools.com">Link para w3 schools</a>
+            <a href="http://www.w3schools.com" target="_self">Link para w3 schools <br></a>
+            <a href="http://www.w3schools.com" target="_blank">Link para w3 schools<br></a>
+            <a href="http://www.w3schools.com" target="_parent">Link para w3 schools<br></a>
+            <a href="http://www.w3schools.com" target="_top">Link para w3 schools</a>
+
         
             <br>
             <p>Meu parágrafo</p>
             <h1>Imagem html.png</h1>
+            <a href="https://github.com/PyGamer80/webDesign_teste">
             <img src="img/download.png" alt="html" width="200" height="200">
+            </a>
             <h3>Este é <abbr title="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_abbr"> Meu site</abbr></h3>
             <address>
                 Written by John Doe.<br> 
@@ -41,5 +149,14 @@
             <h3 style="border:2px solid dodgerblue;">Color </h3>
             <h3 style="border:2px solid violet;">Color </h3>
             <h3>AZUL</h3>
+
+            <iframe src="http://127.0.0.1:5500/index.html" height="700" width="1000" title="Página da w3schools"></iframe>
+
+            <h1>Formulários</h1>
+            <a href="http://127.0.0.1:5500/html/form.html" target="_blank">Link para Formulários</a>
+            <div>
+                Teste
+            </div>
+
     </body>
 </html> 

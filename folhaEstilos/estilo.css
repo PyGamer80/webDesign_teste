@@ -1,17 +1,72 @@
 body{
-  background-color: blueviolet;
+  background-color:rgba(14, 135, 235, 0.5);
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
 }
 h3{
   color: blue;
 }
-p{
-  background-color: tomato; 
-  font-size: 300%;
-}
+
 h1{
-  color:blue;
+  color:greenyellow;
 }
 h2{
+  color: azure;
   font-family: verdana; 
   text-align: center;
+}
+a:link{
+  color:green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited{
+  color:pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  color:transparent;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active{
+  color:yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+table{
+  color: antiquewhite;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+div {
+  background-color: green;
+  opacity: 0.5;
+  width: 200px;
+  height: 50px;
 }
